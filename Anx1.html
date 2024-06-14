@@ -1,0 +1,112 @@
+ <html>
+     <head>
+         <title>Server Forum</title>
+     </head>
+         <body>
+             <h2 data-text="Server Forums">Server Forums</h2>
+             <nav>
+                 <a href="#">Home</a>
+                 <a href="#">Server</a>
+                 <a href="#">Status</a>
+                 <div class="animation start-home"></div>
+             </nav>
+         </body>
+             <style>
+             nav{
+                 position: relative;
+                 margin: 270px auto 0;
+                 width: 350px;
+                 height: 50px;
+                 background: #34495e;
+                 border-radius: 8px;
+                 font-size: 0;
+                 box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+                 margin-top: -650px;
+             }
+             nav a{
+                 font-size: 15px;
+                 text-transform: uppercase;
+                 color: white;
+                 text-decoration: none;
+                 line-height: 50px;
+                 position: relative;
+                 z-index: 1;
+                 display: inline-block;
+                 text-align: center;
+             }
+             
+             nav .animation{
+                 position: absolute;
+                 height: 100%;
+                 top: 0;
+                 z-index: 0;
+                 background: pink;
+                 border-radius: 8px;
+                 transition: all .6s ease 0s;
+             }
+             a:nth-child(1){
+                 width: 100px;
+             }
+             nav .start-Home,a:nth-child(1):hover~.animation{
+                 width: 100px;
+                 left: 0;
+             }
+             a:nth-child(2){
+                 width: 110px;
+             }
+             nav .start-Server,a:nth-child(2):hover~.animation{
+                 width: 110px;
+                 left: 100px;
+             }
+             a:nth-child(3){
+                 width: 100px;
+             }
+             nav .start-Status,a:nth-child(3):hover~.animation{
+                 width: 100px;
+                 left: 210px;
+             }
+                    body{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 100vh;
+                        background: #252839;
+                        font-family: 'Monospace', Sans-Serif;
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                     }
+                     h2{
+                        position: relative;
+                        font-size: 14vw;
+                       /* color: #252839;*/
+                        -webkit-text-stroke: 0.3vw #383d52;
+                        text-transform: uppercase;
+                        position: absolute;
+                        contain: attr(data-text);
+                        top: 10px;
+                        left: 0%;
+                        width: 10%;
+                        height: 19.60%;
+                        color: #252839;
+                        border-right: 1px solid pink;
+                        webkit-text-stroke: -1px #252839;
+                        overflow: hidden;
+                        animation: animate 16s linear infinite;
+                        margin-left: 23vw;
+                        margin-top: 70vw;
+                        background: #252839;
+                    }
+                    @keyframes animate
+                    {
+                        0%, 10%, 100%
+                        {
+                            width: 0;
+                        }
+                        70%, 80.59%
+                        {
+                            width: 58.52%;
+                        }
+                    }
+             </style>
+ </html>
